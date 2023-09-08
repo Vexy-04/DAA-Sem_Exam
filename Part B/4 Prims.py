@@ -53,3 +53,23 @@ for i in range(n):
 
 # Compute and display the minimum cost connection
 g.prim_mst()
+
+'''
+Enter the number of thermal power stations: 5
+Enter the cost of electrification for each connection:
+Enter the cost between thermal station 0 and 1: 2
+Enter the cost between thermal station 0 and 2: 5
+Enter the cost between thermal station 0 and 3: 4
+Enter the cost between thermal station 0 and 4: 2
+Enter the cost between thermal station 1 and 2: 5
+Enter the cost between thermal station 1 and 3: 1
+Enter the cost between thermal station 1 and 4: 9
+Enter the cost between thermal station 2 and 3: 3
+Enter the cost between thermal station 2 and 4: 8
+Enter the cost between thermal station 3 and 4: 10
+Thermal Station   --   Connected to   -->   Thermal Station   Cost
+   1                    --                    0                 2
+   2                    --                    3                 3
+   3                    --                    1                 1
+   4                    --                    0                 2
+'''

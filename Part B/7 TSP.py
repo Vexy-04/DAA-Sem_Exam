@@ -32,7 +32,8 @@ if __name__=="__main__":
     if try_again !="yes":
       break
   
-  '''
+
+'''
 Output:
 enter the number of dril holes(nodes):4
 enter the distance between nodes1 and node2:2
@@ -42,6 +43,6 @@ enter the distance between nodes2 and node3:6
 enter the distance between nodes2 and node4:4
 enter the distance between nodes3 and node4:8
 optimal drilling order: [1, 2, 3, 4, 2, 1]
- Total optimal cost: 22.0
+Total optimal cost: 22.0
 do you want to try again with different number of nodes?(yes/no):no
 '''
