@@ -56,8 +56,8 @@ def selectionsort(array,size):
 
 def read_input():
     a=[]      
-    n=int(input("Enter the number of tv channels:"))
-    print("enter the number of viewers:")
+    n=int(input("Enter the number of tv channels: "))
+    print("enter the number of viewers: ")
     for i in range(0,n):
         l=int(input())
         a.append(l)
