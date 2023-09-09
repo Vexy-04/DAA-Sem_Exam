@@ -18,11 +18,6 @@ Enter the elements of the array, separated by spaces: 10 20 30 40 50
 The array elements are:  [10, 20, 30, 40, 50]
 Enter the index: 0
 Element at index 0 is: 10
-Do you want to try again with different number (yes/no):yes
-Enter the index: 4
-Element at index 4 is: 50
-Do you want to try again with different number (yes/no):yes 
-Enter the index: 7
 Invalid index!
 Do you want to try again with different number (yes/no):no
 '''
