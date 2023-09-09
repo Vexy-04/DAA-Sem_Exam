@@ -1,4 +1,4 @@
-## Write a Python program to demonstrate bubble sort.
+# Write a Python program to demonstrate bubble sort.
 
 def bubble_sort(arr):
     n = len(arr)
@@ -8,9 +8,10 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 
-array = [int(x) for x in input("Enter the elements of the array, separated by spaces: ").split()]
+array = [int(x) for x in input(
+    "Enter the elements of the array, separated by spaces: ").split()]
 bubble_sort(array)
 print("Sorted array:", array)
 
-# Enter the elements of the array, separated by spaces: 20 10 3 4 52 19  
+# Enter the elements of the array, separated by spaces: 20 10 3 4 52 19
 # Sorted array: [3, 4, 10, 19, 20, 52]

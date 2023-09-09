@@ -1,7 +1,8 @@
-## Write a Python program to create an array of 5 integers and display the array items. Access individual elements through indexes.
+# Write a Python program to create an array of 5 integers and display the array items. Access individual elements through indexes.
 
 # Create an array of 5 integers
-array = [int(x) for x in input("Enter the elements of the array, separated by spaces: ").split()]
+array = [int(x) for x in input(
+    "Enter the elements of the array, separated by spaces: ").split()]
 
 # Display the array items
 print("Array items:")
