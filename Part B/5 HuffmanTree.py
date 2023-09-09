@@ -1,5 +1,6 @@
 import heapq
 
+
 class Node:
     def __init__(self, freq, symbol, left=None, right=None):
         self.freq = freq
@@ -11,6 +12,7 @@ class Node:
     def __lt__(self, nxt):
         return self.freq < nxt.freq
 
+
 def printNodes(node, val=''):
     newVal = val + str(node.huff)
     if node.left:
@@ -19,7 +21,8 @@ def printNodes(node, val=''):
         printNodes(node.right, newVal)
     if not node.left and not node.right:
         print(f"{node.symbol} -> {newVal}")
-        
+
+
 def encode_text(text, huffman_tree):
     encoding_map = {}
 
@@ -39,6 +42,7 @@ def encode_text(text, huffman_tree):
 
     return encoded_text
 
+
 def decode_text(encoded_text, huffman_tree):
     decoded_text = ''
     current_node = huffman_tree
@@ -55,6 +59,7 @@ def decode_text(encoded_text, huffman_tree):
 
     return decoded_text
 
+
 chars = input("Enter characters: ").split(' ')
 freq = [int(i) for i in input("Enter frequencies: ").split(' ')]
 
@@ -68,7 +73,8 @@ while len(nodes) > 1:
     right = heapq.heappop(nodes)
     left.huff = '0'
     right.huff = '1'
-    new_node = Node(left.freq + right.freq, left.symbol + right.symbol, left, right)
+    new_node = Node(left.freq + right.freq, left.symbol +
+                    right.symbol, left, right)
     heapq.heappush(nodes, new_node)
 printNodes(nodes[0])
 

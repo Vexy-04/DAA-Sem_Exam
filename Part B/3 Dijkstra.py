@@ -1,5 +1,6 @@
 import heapq
 
+
 def dijkstra(graph, start):
     distances = {node: float('inf') for node in graph}
     distances[start] = 0
@@ -16,6 +17,7 @@ def dijkstra(graph, start):
                 heapq.heappush(heap, (distance, neighbor))
 
     return distances
+
 
 def find_optimal_route(graph, start, destination):
     distances = dijkstra(graph, start)

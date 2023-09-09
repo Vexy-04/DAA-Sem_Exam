@@ -8,6 +8,7 @@ def is_safe(board, row, col, n):
             return False
     return True
 
+
 def solve_n_queens(n):
     solutions = []
 
@@ -25,6 +26,7 @@ def solve_n_queens(n):
     backtrack(0, [['*' for _ in range(n)] for _ in range(n)])
     return solutions
 
+
 def print_solutions(solutions):
     if solutions:
         for sol in solutions:
@@ -33,6 +35,7 @@ def print_solutions(solutions):
             print()
     else:
         print("Not Possible!")
+
 
 N = int(input("Enter the number of Queens: "))
 print_solutions(solve_n_queens(N))
